@@ -1,2 +1,2 @@
 #!/usr/bin/env tclsh
-expr 1 + 1
+puts [expr 1 + 1]
