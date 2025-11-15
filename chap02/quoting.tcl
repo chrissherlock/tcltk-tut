@@ -20,3 +20,11 @@ puts "a is $a; the square of a is [expr $a*$a]"
 # how to use a double quote
 set name a.out
 puts "Couldn't open file \"$name\""
+
+# quoting with braces - all special characters lose their
+# meaning
+puts {Eggs: $2.18/dozen
+Gasoline: $1.49/gallon}
+
+# now show msg1 above using braces...
+puts {Eggs: \$2.18/dozen\nGasoline: \$1.49/gallon}
