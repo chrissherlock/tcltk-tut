@@ -31,3 +31,8 @@ set currency(Japan) yen
 
 puts [array size currency]
 puts [array names currency]
+
+# iterate through each element of the array
+foreach i [array names currency] {
+    puts "currency($i) = $currency($i)"
+}
