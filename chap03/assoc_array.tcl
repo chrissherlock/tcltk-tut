@@ -36,3 +36,10 @@ puts [array names currency]
 foreach i [array names currency] {
     puts "currency($i) = $currency($i)"
 }
+
+# show whether a variable is an array
+set x1 1
+puts [array exists x1]
+
+set x2(element) 1
+puts [array exists x2]
