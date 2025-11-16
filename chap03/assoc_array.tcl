@@ -9,3 +9,11 @@ puts [set earnings(Feburary) 95400]
 
 # returns the value of the January element
 puts [set earnings(January)]
+
+# querying the elements of the array
+set currency(France) euro
+set "currency(Great Britain)" pound
+set currency(Japan) yen
+
+puts [array size currency]
+puts [array names currency]
