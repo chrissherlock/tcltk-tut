@@ -19,3 +19,12 @@ puts [string range "Sample string" 3 7]
 
 puts [string range "Sample string" 3 end]
 # => ple string
+
+puts [string first th "There is the tub where I bathed today"]
+# => 9
+
+puts [string first th "There is the tub where I bathed today" 12]
+# => 27
+
+puts [string last th "There is the tub where I bathed today"]
+# => 27
