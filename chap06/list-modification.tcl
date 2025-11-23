@@ -29,7 +29,7 @@ puts [lreplace {a b {c d} e} 1 2 {W X} Y Z]
 # update a list value in the variable
 set person {{Jane Doe} 30 female}
 puts [set person [lreplace $person 1 1 31]]
-# => (Jane Doe) 31 female
+# => {Jane Doe} 31 female
 
 # better to do this...
 puts [lset person 1 32]
