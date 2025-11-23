@@ -1,0 +1,29 @@
+# Compiled Tcl/Tk files
+*.tbc
+*.tclc
+*.vfs
+*.vfs.gz
+
+# Temporary files
+*~
+#*#
+.#*
+*.bak
+*.swp
+*.tmp
+
+# IDE/Editor specific files (e.g., for VS Code, Sublime Text, etc.)
+.vscode/
+.sublime-workspace
+.idea/
+
+# Operating System specific files
+.DS_Store
+Thumbs.db
+
+# Build artifacts (if any)
+build/
+dist/
+
+# Log files
+*.log
