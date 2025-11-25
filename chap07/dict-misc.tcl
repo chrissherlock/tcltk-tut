@@ -13,3 +13,20 @@ puts [dict lappend shopping fruit banana]
 
 puts [dict lappend shopping veg cabbage beans]
 # => fruit {apple orange banana} veg {carrot cabbage beans}
+
+proc computeHistogram {text} {
+    set frequencies {}
+
+    foreach word [split $text] {
+        # Ignore empty words caused by double spaces
+        if {$word eq ""} continue
+
+        dict incr frequencies [string tolower $word]
+    }
+
+    return $frequencies
+}
+
+dict for {key value} [computeHistogram "this day is a happy happy day"] {
+    puts "Key: $key, Value: $value"
+}
