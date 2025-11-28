@@ -30,3 +30,7 @@ foreach i $a {
 }
 
 puts $d
+
+foreach {x y} {a b c d e} {
+    puts "<$x> <$y>"
+}
