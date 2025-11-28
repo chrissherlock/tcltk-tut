@@ -34,3 +34,9 @@ puts $d
 foreach {x y} {a b c d e} {
     puts "<$x> <$y>"
 }
+
+# process multiple lists in parallel
+
+foreach i {a b} {j k} {v w x y z} {
+    puts "i:<$i>, j:<$j>, k:<$k>"
+}
